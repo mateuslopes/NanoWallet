@@ -51,6 +51,9 @@ import './modules/explorer';
 import './modules/offlineTransaction';
 import './modules/voting';
 import './modules/invoice';
+import './modules/signedMessage';
+import './modules/domainNameSystem';
+import './modules/importWalletQrCode';
 
 // Create and bootstrap application
 const requires = [
@@ -94,6 +97,7 @@ const requires = [
     'app.shapeshift',
     'app.explorerHome',
     'app.explorerApostilles',
+    'app.explorerTransactions',
     'app.accountsExplorer',
     'app.explorerNamespacesMosaics',
     'app.offlineTransactionCreate',
@@ -101,7 +105,12 @@ const requires = [
     'app.votingPolls',
     'app.votingCreatePoll',
     'app.apostilleMessage',
-    'app.invoice'
+    'app.invoice',
+    'app.signedMessageCreation',
+    'app.signedMessageVerification',
+    'app.domainNameSystem',
+    'app.dnsSearch',
+    'app.importWalletQrCode'
 ];
 
 window.$ = window.jQuery = $;

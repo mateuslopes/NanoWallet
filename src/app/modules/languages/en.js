@@ -59,6 +59,7 @@ function EnglishProvider($translateProvider) {
         DASHBOARD_NOTICE_3: 'The NEM Team suggests primarily testing on the testnet to familiarize yourself with NanoWallet first before using the mainnet. A simple guide can be found <a href="https://blog.nem.io/nanowallet-tutorial/" target="_blank">here</a>. Users are responsible for their funds and having their private keys backed up. The NEM team is not responsible for any loss of funds due to using this app on the mainnet.',
         DASHBOARD_NOTICE_4: 'We suggest writing down private keys on paper and storing it in a safe place. Additionally, you can import your accounts into the Android and iOS apps as a backup.',
         DASHBOARD_NOTICE_5: 'Thanks for your participation!',
+        DASHBOARD_MORE_TXES: 'See more transactions',
 
         // GENERAL
         GENERAL_BLOCK: 'Block',
@@ -163,6 +164,8 @@ function EnglishProvider($translateProvider) {
         GENERAL_HEXADECIMAL: 'Hexadecimal',
         GENERAL_SELECT_ACCOUNT: 'Select account',
         GENERAL_INVOICE: 'Invoice',
+        GENERAL_SIGNATURE: 'Signature',
+        GENERAL_VERIFY: 'Verify',
 
         // HOME MODULE
         HOME_UNSUPPORTED_BROWSER: 'Sorry but you cannot use Nano Wallet safely with this browser...',
@@ -395,6 +398,7 @@ function EnglishProvider($translateProvider) {
         PORTAL_ADDRESS_BOOK_TEXT: 'Assign labels to addresses to easily keep track of your contacts.',
         PORTAL_ADDRESS_BOOK_BTN: 'Manage address book',
         PORTAL_INVOICE_TEXT: 'Create an invoice to share via QR code',
+        PORTAL_SIGNED_MSG_TEXT: 'Create and verify signed messages to authenticate account ownership without transacting.',
 
         // ADDRESS BOOK MODULE
         ADDRESS_BOOK_TITLE: 'Address book',
@@ -438,6 +442,11 @@ function EnglishProvider($translateProvider) {
         // ACCOUNT EXPLORER
         ACCOUNTS_EXPLORER_TITLE: 'Explorer - Accounts',
         ACCOUNTS_EXPLORER_SEARCH: 'Search',
+
+        // TRANSACTIONS EXPLORER
+        EXPLORER_TRANSACTIONS_TITLE: 'Your transactions history',
+        EXPLORER_TRANSACTIONS_LOAD_MORE: 'Load more',
+
 
         // APOSTILLE HISTORY MODULE
         APOSTILLE_HISTORY_TITLE: 'Apostille history',
@@ -572,7 +581,7 @@ function EnglishProvider($translateProvider) {
         ALERT_BTC_MARKET_ERROR: 'Error while trying to fetch Bitcoin price',
         ALERT_COSIG_REMOVAL_LIMIT: 'Only one cosignatory at a time can be removed',
         ALERT_MULTISIG_MIN_SIGNATURE_INVALID: 'Invalid number of minimum signatures',
-        ALERT_INSUFFICIENT_BALANCE: 'Insufficient Balance for performing the operation',
+        ALERT_INSUFFICIENT_BALANCE: 'Insufficient balance for performing the operation',
         ALERT_VOTING_ERROR: 'Invalid Vote',
         ALERT_BRAIN_PASSWORD_TOO_SHORT: 'Brain wallet passphrase must be at least 40 characters!',
         ALERT_NODE_SEEMS_OFFLINE: 'Node seems offline, please select another one',
@@ -601,6 +610,7 @@ function EnglishProvider($translateProvider) {
         ALERT_VOTING_SUCCESS: 'Vote Sent Successfully',
         ALERT_POLL_CREATION_SUCCESS: 'Poll Created Successfully',
         ALERT_COPY_SIGNED_TX_SUCCESS: 'Signed transaction copied!',
+        ALERT_COPY_SIGNED_MSG_SUCCESS: 'Signed message copied!',
 
         // CONVERT ACCOUNT TO MULTISIG
         AGGREGATE_MODIFICATION_TITLE: 'Convert an account to multisig',
@@ -643,7 +653,7 @@ function EnglishProvider($translateProvider) {
         LOGIN_SELECT_WALLET_YOURS: 'Select wallet',
         LOGIN_SELECT_WALLET: 'Select a wallet in local storage',
         LOGIN_LOGIN_BUTTON: 'Sign In',
-        LOGIN_NOTE: 'No wallet? Import one or <a href="#!/signup">signup</a>.',
+        LOGIN_NOTE: 'No wallet? <a href="#!/import-wallet-qr-code">Import one</a> or <a href="#!/signup">sign up</a>.',
 
         // SIGNUP MODULE
         SIGNUP_TITLE: 'New to NEM?',
@@ -686,7 +696,7 @@ function EnglishProvider($translateProvider) {
         SIGNUP_COMMON_WALLET_WARNING_BTN_1: 'Show raw wallet file',
         SIGNUP_COMMON_WALLET_WARNING_BTN_1_INFO: 'To make a wallet file, create an empty text file and put the above base 64 key into it. Save the file as <b><i>yourWalletName.wlt</i></b>.',
         SIGNUP_COMMON_WALLET_WARNING_BTN_2: 'Show private key',
-        SIGNUP_COMMON_WALLET_WARNING_BTN_2_INFO: 'To backup a private key, print it or save it in a text file. It is highly recommend to store the private key in a safe and offline location.',
+        SIGNUP_COMMON_WALLET_WARNING_BTN_2_INFO: 'Your private key holds all the power of your account and therefore it must be kept secret. <b>Never share it with anyone</b>. It is <b>highly recommend</b> to store the private key in a safe and offline location.',
         SIGNUP_COMMON_WALLET_WARNING_FOOTER: 'By clicking below, you agree that you have your private key, password and wallet file backed up.',
         SIGNUP_COMMON_WALLET_WARNING_CONFIRM_1: 'I have my wallet file',
         SIGNUP_COMMON_WALLET_WARNING_CONFIRM_2: 'I have my private key and password',
@@ -695,6 +705,7 @@ function EnglishProvider($translateProvider) {
         SIGNUP_COMMON_WALLET_WARNING_DOWNLOAD: 'Download wallet',
         SIGNUP_ESTIMATED_PASSPHRASE_STRENGTH: 'Estimated passphrase strength',
         SIGNUP_ESTIMATED_GUESS_TIMES: 'Estimated guess times',
+        SIGNUP_CONGRATS_MSG: '<b>Congratulations!</b> Your NEM address is',
 
         // FAQ MODULE
         FAQ_TITLE: 'Frequently Asked Questions',
@@ -778,12 +789,13 @@ function EnglishProvider($translateProvider) {
         // CREATE OFFLINE TRANSACTION MODULE
         OFFLINE_TX_TITLE: 'Prepare an offline transaction',
         OFFLINE_TX_NO_WALLET: 'Please import a wallet from login module to see the form.',
-        OFFLINE_TX_INFO_1: 'Make sure to be disconnected of internet when importing your wallet and creating the transaction!',
+        OFFLINE_TX_INFO_1: 'To be completely safe, make sure to use a computer that is <b>NEVER</b> connected to internet.',
         OFFLINE_TX_INFO_2: 'Only simple transactions can be created because a connection is needed to fetch mosaics and multisig information from NEM nodes.',
         OFFLINE_TX_INFO_3: 'After clicking the "create" button in the left panel, you will find the signed transaction below.',
         OFFLINE_TX_INFO_4: 'A signed transaction is immutable and will be effective only if released to the network before the default deadline of 24 hours.',
         OFFLINE_TX_SIGNED: 'Signed transaction',
         OFFLINE_TX_RELEASE: 'Open in release module',
+        OFFLINE_TX_MODAL_ALERT: 'This computer seems connected to internet, please note that creating offline transactions is safe <b>ONLY</b> on a computer that is <b>NEVER</b> connected to internet.',
 
         // RELEASE OFFLINE TRANSACTION MODULE
         RELEASE_OFFLINE_TX_TITLE: 'Release a transaction to the network',
@@ -794,7 +806,57 @@ function EnglishProvider($translateProvider) {
         RELEASE_OFFLINE_TX_INFO_4: 'You can release a signed transaction from any computer safely.',
 
         // INVOICE MODULE
-        CREATE_INVOICE_TITLE: 'Create an invoice'
+        CREATE_INVOICE_TITLE: 'Create an invoice',
+
+        // CREATE SIGNED MESSAGE MODULE
+        CREATE_SIGNED_MSG_TITLE: "Create a signed message",
+        CREATE_SIGNED_MSG_NAME: 'Signed message',
+        CREATE_SIGNED_MSG_SIGN: 'Sign message',
+
+        // VERIFY SIGNED MESSAGE MODULE
+        VERIFY_SIGNED_MSG_TITLE: "Verify a signed message",
+        VERIFY_SIGNED_MSG_SIG_VALID: 'Signature is valid',
+        VERIFY_SIGNED_MSG_SIG_NOT_VALID: 'Signature is <b>NOT</b> valid',
+        VERIFY_SIGNED_MSG_NOT_VALID: 'Signed message is not valid!',
+
+        // DNS MODULE
+        DNS_SHORT_DESC: "Decentralized Domain Name System (DNS) service for namespace.nem domains",
+        DNS_CONFIGURE: "Configure DNS",
+        DNS_SEARCH_DNS: "Search DNS",
+        DNS_GO_SEARCH: "GO!",
+        DNS_GET_INFO: "Get info",
+        DNS_SEARCH_HEADLINE: "Search DNS",
+        DNS_SEARCH_HELP: "DNS help",
+        DNS_SEARCH: "Search",
+        DNS_SEARCH_HELP_INFO: "Type a namespace.nem to lookup associated DNS information or go directly to website. ",
+        //DNS CONFIGURE
+        DNS_SELECT_NAMESPACE:"select namespace",
+        DNS_POINTER_ADDRESS:"Pointer address",
+        DNS_IP_ADDRESS:"ip address",
+        DNS_ORGA:"Organization",
+        DNS_COUNTRY:"Country",
+        DNS_ADDRESS:"Address",
+        DNS_PHONE:"Phone",
+        DNS_EMAIL:"Email",
+        DNS_OTHERINFO:"Other info",
+        DNS_JSONMSG:"Json message",
+        DNS_CHAR_LEFT:"Characters Left",
+        DNS_HELP1:"The owner of a NEM namespace can use the NEM DNS in a few easy steps. The DNS is built around the namespace platform in the NEM ecosystem and an associated pointer address (PA). The namespace owner needs to send a transaction to the namespace pointer address including a non-encrypted message in json format with information related to the namespace. The message can include relevant information such as IP address, ownership info, physical address, contact info and much more.",
+        DNS_HELP2:"This is how you do it:",
+        DNS_HELP3:"1. select namespace",
+        DNS_HELP4:"2. write relevant or update DNS information",
+        DNS_HELP5:"3. send transaction to pointer address",
+        //DNS ALERTS
+        ALERT_DNS_SUCCESS: "Information found",
+        ALERT_DNS_NO_INFO_FOUND: "No DNS info found",
+
+        // IMPORT WALLET QRCODE
+        IMPORT_WALLET_QRCODE_TITLE: 'Import wallet QR code',
+        IMPORT_WALLET_QRCODE_INFORMATION: 'Support wallet QR code: NEM wechat wallet, ios, android.',
+        IMPORT_WALLET_QRCODE_LOAD: 'Load wallet QR code',
+        IMPORT_WALLET_QRCODE_SCAN: 'Scan',
+        IMPORT_WALLET_QRCODE_STOP_SCAN: 'Stop scan'
+
     });
 
 }
